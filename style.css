@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(212, 21%, 14%);
+  background-color: hsl(30, 38%, 92%);
+}
+
+main {
+  transform: translate(0px, 10px);
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a,
+.p-sale {
+  color: hsl(158, 36%, 37%);
+}
+
+.p-header,
+.p-sale {
+  font-family: 'Fraunces', serif;
+}
+
+.p-card {
+  background-color: hsl(0, 0%, 100%);
+  width: 636px;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.p-left {
+  background-image: url("./images/image-product-desktop.jpg");
+  background-size: 350px;
+  width: 1262px;
+}
+
+.p-right {
+  margin: 20px 40px;
+}
+
+.p-info {
+  text-align: left;
+}
+
+.p-category {
+  text-transform: uppercase;
+}
+
+.p-category,
+.p-desc {
+  color: hsl(228, 12%, 48%);
+}
+
+.p-header,
+.p-sale {
+  font-size: 34px;
+}
+
+.p-header {
+  margin: 20px 0;
+}
+
+.p-pricing {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.p-price {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.p-btn {
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 12px 40px;
+  background: hsl(158, 36%, 37%);
+  border: 1px solid hsl(158, 36%, 37%);
+  border-radius: 8px;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(158, 38%, 14%);
+  border: 1px solid hsl(158, 38%, 14%);
+}
+
+.img-cart {
+  margin-right: 8px;
+}
+
+main {
+  container-type: inline-size;
+}
+
+@container (max-width: 665px) {
+  .p-card {
+    max-width: 350px;
+    flex-direction: column;
+  }
+
+  .p-left {
+    background-image: url("./images/image-product-mobile.jpg");
+    background-repeat: no-repeat;
+    height: 253px;
+  }
+
+  .p-header, .p-sale {
+    font-size: 30px;
+  }
+
+  .p-header {
+    margin: 10px 0; 
+  }
+
+  .p-desc, .p-category {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}
+
+
+
